@@ -1,0 +1,469 @@
+body {
+    font-family: "serif";
+    margin : 0 px;
+    padding : 0 px ;
+    background-image: url("Photos/background.jpg");
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+nav{
+    width: 100%;
+    background-color : #424558;
+    display: inline-block;
+    
+}
+nav > ul {
+    justify-content: center;
+    display: flex;
+    border-bottom: 2px solid gray;
+}
+nav > ul::after{
+    content : "" ;
+    display : block;
+    clear : both;
+
+}
+
+nav > ul >li >a{
+    
+    font-size: 20px;
+    padding : 20px 30px;
+    color : #FFF ; 
+}
+nav > ul >li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+nav li {
+    list-style-type: none ;  
+}
+
+
+nav a{
+    display : inline-block;
+    text-decoration: none;
+}
+
+
+
+li a{
+    
+    font-size: 15px;
+    color : #222538 ;
+}
+
+
+.Contact:hover{
+    border-top : 5px solid #e44d26 ;
+    background-color : rgba(228,77,38,0.15) ;
+
+}
+
+.Home:hover{
+    border-top : 5px solid #496e1e ;
+    background-color : rgba(156, 149, 40, 0.15) ;
+
+}
+
+.Panier:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000,112,192,0.15);
+
+}
+.Client:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241,211,79,0.15);
+}
+
+
+
+#Destinations .Emplacement{
+    float : left ;
+    position : relative ;
+    list-style-type: none;
+    
+}
+
+div a{
+    padding : 5px 10px;
+    
+}
+.renseignement{
+    height: 50px;
+    width: 100%;
+}
+
+.colonne input{
+    margin-bottom:10px;
+ }
+.champsObligatoire{
+    bottom: 0px;
+    display: flex;
+    float :right;
+}
+.reservation {
+    margin-right: 10%;
+    margin-top: 1%;
+    border : 3px solid burlywood ;
+    border-radius: 5px;
+
+}
+
+.colonne {
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+}
+.colonne .sizeInput{
+    width: 50%;
+    height : 2.2rem
+}
+.remiseAZero{
+    background-color: white;
+    margin-top: 30px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font: 15px "Calibri" , "Sans serif";
+}
+
+#reservationRedirect{
+    padding: 40px;
+    margin-left: 75%;
+
+}
+
+.reserved{
+    background-color: #e96e50;
+    border:#c1593f;
+    margin-top: 10px;
+    padding : 6px 12px;
+    border-radius: 5px;
+    font : 20px  "Sans serif";
+}
+
+
+.ImagesDestinations{
+    width: 340px;
+    border:solid black 2px;
+    border-radius: 2px;
+    margin: 20px;
+    position: relative;
+
+}
+.ImagesDestinations:hover .reserver{
+    bottom : 163px;
+    opacity: 0.8;
+    padding: 10px;
+    text-decoration : none;
+    
+}
+.image{
+    height: 200px;
+    width: 300px;
+    display: block;
+}
+
+.Header{
+    padding: 30x;
+    margin: auto;
+    text-align: center;
+    position: static;
+    top: 0px;
+    width: 90%;
+    border:solid black 2px;
+    border-radius: 10px;
+}
+
+.Contenu{
+    margin: auto;   
+}
+
+.PiedPage{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    
+    text-align: center;
+    left: 5%;
+    position: relative;
+    bottom: 0px;
+    width: 90%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 10px     10px      0           0;   
+    background-color: white;
+    clear : both;
+}  
+
+
+.clear{
+    clear: both;
+}
+
+.Overlay {
+    position: absolute;
+    bottom: 5px;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 95%;
+    background-color: gray;
+  }
+
+.Intro{
+    background: radial-gradient(ellipse farthest-corner,  white 50%, rgba(0,0,0,0),);
+    padding : 30px;
+    text-align: center;
+}
+
+/*-----------------------------------------------------PAGE CONTACT-----------------------------------------------------------*/
+
+h2{
+    text-align: center;
+}
+.nous_contacter{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.nous_contacter_formulaire{
+  
+    width:50%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border : 3px solid burlywood ;
+    border-radius: 5px; 
+}
+
+.infosContact input{
+    margin-bottom: 10px;
+}
+/*----------------------------------------------BOUTON RETOUR ---------------------------------------------------------------------*/
+
+.Coeur{
+    text-align: center;
+    margin : 0px ;
+    background-color: white;
+}
+
+.contactinfos{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border:solid black 2px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav.Nav2{
+    width: 90%;
+    background-color : #424558;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    color : #FFF ;
+    border-radius: 10px;
+}
+.tri-before:before{
+    content: "\f1de";
+    font-family: FontAwesome;
+}
+
+.tri-filter:hover{
+    cursor: pointer;
+    font-style: bold ;
+    background-color : grey;
+    color : black
+}
+
+#button {
+    display: inline-block;
+    background-color:#424558;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    margin: 10px;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+    
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+#button:active {
+    background-color: #555;
+  }
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+
+#DestinationList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+/*----------------------------------------------ESPACE CLIENT------------------------------------------------------------*/
+
+.c-dialog {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding: 2.4rem;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(black, .75);
+    transition: .2s;
+}
+  
+  
+.c-dialog__box {
+    background-color: #fff;
+    border-radius: .6rem;
+    border: 2px solid turquoise;
+    color: #25465f;
+    overflow: auto;
+    position: relative;
+    padding: 3rem;
+    margin: auto;
+    max-height: calc(100vh - 4rem);
+    text-align: center;
+    z-index: 1;
+      
+}
+  
+  
+.c-dialog[aria-hidden="true"] {
+    visibility: hidden;
+    opacity: 0;
+}
+  
+.close{
+    background: none;
+    position: absolute;
+    top: .6rem;
+    right: .6rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    z-index: 1;
+}
+  
+#inscriptiontitle{
+      font: 1.2rem italic;
+      text-decoration: underline;
+  
+  }
+  
+#connexiontitle{
+      font: 1.2rem italic;
+      text-decoration: underline;
+  
+  }
+  
+  
+#disconnectlink ion-icon{
+    font-size: 18px;
+    color:gray;
+    cursor: pointer;
+    bottom: 0px;
+    display: flex;
+    float: left;
+    margin-right: 2px;
+}  
+#disconnectlink{
+    font-style: oblique;
+    cursor: pointer; 
+}
+#messageConnexionOn{
+    
+    font-size: large;
+}
+
+#disconnectlink:hover{
+      text-decoration: underline;
+ 
+  }
+
+.id{
+    position: relative;
+    }
+    
+.input_icon{
+        position: inherit; 
+        top: 2px;
+        color: #424558; 
+        left: 2px;
+        font-size: 21px; 
+        width: 50px;
+}
+      
+
+.client-space {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width:200px; 
+}
+.send {
+    background-color: #e96e50;
+    border:#c1593f;
+    margin-top: 30px;
+    padding : 6px 12px;
+    border-radius: 5px;
+    font : 15px "Calibri" , "Sans serif"
+}
+
+h2#inscriptiontitle{
+    padding-top: 10px;
+}
+
+p#dialog-desc,
+h2#connexiontitle{
+    padding: 10px;
+}
+
+
+.Coeur2, #Map{
+    margin: 100px 50px 10px 50px;
+    width: auto;
+    height: auto;
+}

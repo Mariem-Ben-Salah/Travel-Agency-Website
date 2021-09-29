@@ -1,0 +1,921 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    margin : 0 px;
+    padding : 0 px ;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+* {box-sizing: border-box;}
+
+
+.topnav {
+  vertical-align: top;
+  display: inline-block;
+  color:black;
+  text-align: left;
+  text-decoration: none;
+  font-size: 17px;
+  width: 49%;
+}
+
+.bouton {
+ vertical-align: top;
+ display: inline-block;
+ color:white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ width: auto;
+ height: auto;
+ cursor: pointer;
+}
+
+.bouton a {
+  color:black;
+  text-decoration: none;
+}
+
+.bouton:hover {
+  background-color: #ddd;
+  color: black;
+  display: inline-block;
+}
+
+.topnav-right {
+  text-align: right;
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.topnav-right input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  color:black;
+}
+
+.nav-bar{
+  z-index:300;
+
+  list-style-type: none;
+  margin: 0;
+  padding:0px;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+ 
+  background-color:rgba(0,0,0,0.2);
+
+}
+
+.form-input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #069206;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: black;
+}
+
+.signin {
+  margin: auto;
+  width: 50%;
+  padding: 1em 0.5em;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#email {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Clear s after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.column {
+  vertical-align: top;
+  display: inline-block;
+  padding: 10px;
+  height: 300px;
+  width: 24%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  height: 35%;
+}
+
+.test {
+  display: inline-block;
+}
+#h2 {
+  font-size:20px;
+  color: white;
+}
+#logo{
+  margin-left: 40%;
+}
+
+.column1 {
+  margin: -1px;
+  vertical-align: top;
+  display: inline-block;
+  padding: 10px;
+  height: 300px;
+  width: 50%;
+  background-color:white;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  height: 35%;
+}
+.column2 {
+  vertical-align: top;
+  display: inline-block;
+  margin-bottom: 200px;
+  margin-top:100px;
+}
+
+footer { 
+  background-color: #005c99;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myForm {
+  margin: auto;
+    width: 60%;
+  padding: 1em;
+  margin-top: 0px;
+
+
+  background-color: white;
+}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+  }
+.myslides {
+  position: relative;
+  text-align: center;
+  color: black;
+  max-width: 600px;
+}
+.prix {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+ 
+  background-color: #FF6E05; 
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+
+}
+
+.ville{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color:white;
+}
+
+
+.description{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color:white;
+  background-color: rgba(0,0,0,0.5);
+}
+h3:nth-child(1) {
+  margin-left: 150px;
+}
+p:nth-child(1) {
+    border-top-style: solid;
+    margin-top: 150px;
+    border-top-width: 0px;
+}
+
+.container {
+    display: flex;
+    background-color: cornsilk;
+}
+
+.container>* {
+    margin: 0 30px;
+    flex: 1;
+}
+
+.parallax1 {
+    background-image: url("../img/2.jpg");
+    min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #Destinations .Emplacement{
+    float : left ;
+    position : relative ;
+    list-style-type: none;
+    
+}
+
+div a{
+    padding : 5px 10px;
+    
+}
+.renseignement{
+    height: 50px;
+    width: 100%;
+}
+
+.colonne input{
+    margin-bottom:10px;
+ }
+.champsObligatoire{
+    bottom: 0px;
+    display: flex;
+    float :right;
+}
+.reservation {
+    margin-right: 10%;
+    margin-top: 1%;
+    border : 3px solid burlywood ;
+    border-radius: 5px;
+
+}
+
+.colonne {
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+}
+.colonne .sizeInput{
+    width: 50%;
+    height : 2.2rem
+}
+.remiseAZero{
+    background-color: white;
+    margin-top: 30px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font: 15px "Calibri" , "Sans serif";
+}
+
+#reservationRedirect{
+    padding: 40px;
+    margin-left: 75%;
+
+}
+
+.reserved{
+    background-color: #e96e50;
+    border:#c1593f;
+    margin-top: 10px;
+    padding : 6px 12px;
+    border-radius: 5px;
+    font : 20px  "Sans serif";
+}
+
+
+.ImagesDestinations{
+    width: 340px;
+    border:solid black 2px;
+    border-radius: 2px;
+    margin: 20px;
+    position: relative;
+
+}
+.ImagesDestinations:hover .reserver{
+    bottom : 163px;
+    opacity: 0.8;
+    padding: 10px;
+    text-decoration : none;
+    
+}
+.image{
+    height: 200px;
+    width: 300px;
+    display: block;
+}
+
+.Header{
+    padding: 30x;
+    margin: auto;
+    text-align: center;
+    position: static;
+    top: 0px;
+    width: 90%;
+    border:solid black 2px;
+    border-radius: 10px;
+}
+
+.Contenu{
+    margin: auto;   
+}
+
+.PiedPage{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    
+    text-align: center;
+    left: 5%;
+    position: relative;
+    bottom: 0px;
+    width: 90%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 10px     10px      0           0;   
+    background-color: white;
+    clear : both;
+}  
+
+
+.clear{
+    clear: both;
+}
+
+.Overlay {
+    position: absolute;
+    bottom: 5px;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 95%;
+    background-color: gray;
+  }
+
+.Intro{
+    background: radial-gradient(ellipse farthest-corner,  white 50%, rgba(0,0,0,0),);
+    padding : 30px;
+    text-align: center;
+}
+
+/*-----------------------------------------------------PAGE CONTACT-----------------------------------------------------------*/
+
+h2{
+    text-align: center;
+}
+.nous_contacter{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.nous_contacter_formulaire{
+  
+    width:50%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border : 3px solid burlywood ;
+    border-radius: 5px; 
+}
+
+.infosContact input{
+    margin-bottom: 10px;
+}
+/*----------------------------------------------BOUTON RETOUR ---------------------------------------------------------------------*/
+
+.Coeur{
+    text-align: center;
+    margin : 0px ;
+    background-color: white;
+    padding-left: 15%;
+}
+
+.contactinfos{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border:solid black 2px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav.Nav2{
+    width: 100%;
+    background-color :  #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 45%;
+    color : #FFF ;
+ 
+}
+.tri-before:before{
+    content: "\f1de";
+    font-family: FontAwesome;
+}
+
+.tri-filter:hover{
+    cursor: pointer;
+    font-style: bold ;
+    background-color :white;
+    color : black
+}
+
+#button {
+    display: inline-block;
+    background-color:#424558;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    margin: 10px;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+    
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+#button:active {
+    background-color: #555;
+  }
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+
+#DestinationList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+/*----------------------------------------------ESPACE CLIENT------------------------------------------------------------*/
+
+.c-dialog {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding: 2.4rem;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(black, .75);
+    transition: .2s;
+}
+  
+  
+.c-dialog__box {
+    background-color: #fff;
+    border-radius: .6rem;
+    border: 2px solid turquoise;
+    color: #25465f;
+    overflow: auto;
+    position: relative;
+    padding: 3rem;
+    margin: auto;
+    max-height: calc(100vh - 4rem);
+    text-align: center;
+    z-index: 1;
+      
+}
+  
+  
+.c-dialog[aria-hidden="true"] {
+    visibility: hidden;
+    opacity: 0;
+}
+  
+.close{
+    background: none;
+    position: absolute;
+    top: .6rem;
+    right: .6rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    z-index: 1;
+}
+  
+#inscriptiontitle{
+      font: 1.2rem italic;
+      text-decoration: underline;
+  
+  }
+  
+#connexiontitle{
+      font: 1.2rem italic;
+      text-decoration: underline;
+  
+  }
+  
+  
+#disconnectlink ion-icon{
+    font-size: 18px;
+    color:gray;
+    cursor: pointer;
+    bottom: 0px;
+    display: flex;
+    float: left;
+    margin-right: 2px;
+}  
+#disconnectlink{
+    font-style: oblique;
+    cursor: pointer; 
+}
+#messageConnexionOn{
+    
+    font-size: large;
+}
+
+#disconnectlink:hover{
+      text-decoration: underline;
+ 
+  }
+
+.id{
+    position: relative;
+    }
+    
+.input_icon{
+        position: inherit; 
+        top: 2px;
+        color: #424558; 
+        left: 2px;
+        font-size: 21px; 
+        width: 50px;
+}
+      
+
+.client-space {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width:200px; 
+}
+.send {
+    background-color: #e96e50;
+    border:#c1593f;
+    margin-top: 30px;
+    padding : 6px 12px;
+    border-radius: 5px;
+    font : 15px "Calibri" , "Sans serif"
+}
+
+h2#inscriptiontitle{
+    padding-top: 10px;
+}
+
+p#dialog-desc,
+h2#connexiontitle{
+    padding: 10px;
+}
+
+
+.Coeur2, #Map{
+    margin: 100px 50px 10px 50px;
+    width: auto;
+    height: auto;
+}
+
+/*-------------------------------------------PAGE INDEX------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.Destinations{
+    display : flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.ImagesDestinations{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#panier{
+    right: 50%;
+    position: absolute;
+    width: 50%;
+    background-color: rgb(255, 253, 253);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    color: rgb(19, 59, 236);
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.ImagesDestinations:hover #panier{
+    bottom : 163px;
+    opacity: 0.8;
+    padding : 10px;
+    text-decoration : none;
+}
+.ImagesDestinations:hover #reserver{
+    bottom : 163px;
+    opacity: 0.8;
+    padding : 10px;
+    text-decoration : none;
+}
+#reserver{
+    position: absolute;
+    width: 50%;
+    background-color: rgb(255, 253, 253);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    color: rgb(19, 59, 236);
+    cursor: pointer;
+    text-align: center;
+    float: center;
+}
+
+
+/*------------------PAGE PANIER --------------------------------*/
+
+.produits-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    
+}
+.produits-container ion-icon{
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.produits-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid gainsboro;
+    margin : 0 auto ;
+
+}
+
+.titre-produits{
+    width: 55%;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+div.prix{
+    width: 15%;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+}
+
+div.total{
+    width: 10%;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+}
+
+div.quantite{
+    width: 20%;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+}
+
+div.produit{
+    width : 55%;
+}
+.prix{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.quantite{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.produits{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produit{
+    width : 45% ;
+    display : flex;
+    justify-self: space-around ;
+    align-self: center;
+    padding: 10px 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.produit ion-icon{
+    cursor: pointer;
+    
+}
+
+.produits img{
+    width: 200px;
+    height: 125px;
+}
+
+.totalContenuPanier{
+    width : 100% ;
+    display : flex;
+    justify-content: flex-end ;
+    padding: 10px 0;
+   
+}
+
+.panierTotalTitre{
+    width: 30%;
+
+}
+.panierTotal{
+    width: 10%;
+}
+
+.recap{
+    padding : 15px;
+    border-color: red;
+    border-radius: 5px;
+
+}
+
+.recapTitle{
+    font-size: 20px;
+
+}
+
+.recapInfosUser label{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.produitReservation img{
+    width: 200px;
+    height: 125px;
+    
+}
+.produitReservation{
+    text-align: center;
+}
+#infosUserReservation{
+    margin-right: 10%;
+}
+
+.coeur{
+    display :grid;
+    grid-template-columns: 50% 50%;
+}
+
+#infosVoyageReserver{
+    text-align: center;
+}
+
+.recapCommande{
+    margin-left: 10%;
+    border:solid 3px red;
+    margin-top: 1%;
+    border-radius: 5px;
+    width: 89%;
+    height: fit-content;
+}
+
+.nomVoyage{
+    margin-bottom: 20px;
+    border-bottom: black solid 3px;
+    border-radius: 10px;
+}
+
+

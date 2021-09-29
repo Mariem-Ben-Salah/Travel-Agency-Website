@@ -1,0 +1,21 @@
+h1 {
+    text-align : center;
+    color : black;
+    font-size : 50px;
+}
+
+p {
+    margin-left : 50px;
+    color : black;
+    font-size : 15px;
+}
+
+.image1 {
+    margin-left: 35%;
+    width : 30%;
+    height : 30%;
+}
+.parallaxe1{
+    background-image: url("../img/backgroundimage1.jpg");
+    background-attachment: fixed;
+    min-height: 1000px;}
