@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="../css/reservation.css" >
+    <link rel="stylesheet" href="../css/acceuil1.css">
+
+
+    <meta charset="UTF-8">
+    <title>Panier</title>
+</head>
+<body onload="Remplirpanier()" >
+
+    <nav class="nav-bar">
+        <div class="topnav">
+          <a href="../html/acceuil1.html"> <div class="bouton">Accueil</div></a>
+          <a href="../html/covid19.html"> <div class="bouton">Covid-19</div></a>
+          <a href="../html/destinations.html"><div class="bouton">Nos destinations</div></a>
+          <a href="../html/panier.html"><div class="bouton">Panier</div></a>
+          <a href="../html/Carte_du_monde.html"><div class="bouton">Carte</div></a>
+       </div>
+     <div class="topnav-right">
+     <a class="open-button bouton" id="id" onclick="openForm()">S'identifier</a>
+     </div>
+      </nav>
+  <div action="" class="form-container" id="myForm" style="display : none">
+    <div class="container">
+      <h2 class="se_connecter">Accédez à votre compte personnel</h2>
+      <form>
+      <label class="se_connecter" for="email"><b>Email</b></label>
+      <input class="se_connecter" type="text" placeholder="Votre adresse mail" name="email" id="email" required>
+  
+      <label class="se_connecter" for="psw"><b>Mot de passe</b></label>
+      <input class="se_connecter" type="password" placeholder="votre mot de passe" name="psw" id="psw" required>
+  
+      <button class="se_connecter registerbtn" onclick="login()" >Se connecter</button>
+        <button class="se_déconnecter registerbtn" onclick="disconect()" id="se_déconnecter">Se déconecter</button>
+    </form>
+  
+      <div class="container signin">
+        Vous êtes nouveau? <a href="../html/formulaire.html">S'inscrire</a>
+      </div>
+    </div>
+  </div>
+   
+  <form action="" class="form-container" id="myForm" style="display: none">
+    <div id="login"><h1 id="log">login</h1>
+
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" id="email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+        <button type="button" class="btn" onclick="login()">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <a href="../html/formulaire.html">s'inscrire</a></div>
+    <button type="button" id="loged" class="btn" onclick="disconect()">Se déconnecter</button>
+
+</form>
+<div id="tableauDiv">
+  
+    <table id="tableau">
+    <tr>
+        <td > Numéro de réservation
+        </td>
+        <td >
+            Lien vers la réservation
+
+        </td>
+
+    </tr>
+            <td id="message">
+          Vous n'avez aucune réservation pour le moment.
+
+      </td>
+    <tr>
+        <td id="colone1">
+        </td>
+        <td id="colone2">
+
+        </td>
+    </tr>
+
+</table>
+</div>
+</body>
+<script src="../js/panier.js"></script>
+</html>

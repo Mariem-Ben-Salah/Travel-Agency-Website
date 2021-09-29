@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/reservation.css">
+    <meta charset="UTF-8">
+    <title>recapitulatif</title>
+
+</head>
+<body onload="start()">
+
+<table>
+    <tr>
+        <td>
+            Pays:
+        </td>
+        <td id="Country">
+            <i>NAME</i>
+        </td>
+    </tr>
+<tr> <td>Ville:</td>
+    <td  id="Town">NAME</td>
+</tr>
+<tr><td> Nombre de jours:</td>
+    <td  id="NbrJour">NAME</td>
+</tr>
+<tr> <td> Date d'arrivée: </td>
+    <td id="Date arrivee">NAME</td>
+</tr>
+<tr> <td> Date de départ:</td>
+    <td  id="Date depart">NAME</td>
+</tr>
+<tr> <td> Nombre d'adultes:</td>
+    <td id="NbrAdu"> NAME</td>
+</tr>
+<tr> <td> Nombre d'enfants:</td>
+    <td id="NbrEnf">NAME</td>
+</tr>
+<tr> <td> Petit déjeuner: </td>
+    <td id="petitdej">NAME</td>
+</tr>
+<tr> <td> Prix total : </td>
+    <td id="PrixTOT">NAME</td>
+</tr>
+<tr>
+    <td><input type="button" name="Confirmer" value="Ajouter au panier" onclick="transfertverspanier()"></td>
+</tr>
+</table>
+
+<span id="response"></span>
+
+<nav class="nav-bar">
+    <div class="topnav">
+        <a href="../html/acceuil1.html"> <div class="bouton">Accueil</div></a>
+        <a href="../html/covid19.html"> <div class="bouton">Covid-19</div></a>
+        <a href="../html/destinations.html"><div class="bouton">Nos destinations</div></a>
+        <a href="../html/panier.html"><div class="bouton">Panier</div></a>
+        <a href="../html/Carte_du_monde.html"><div class="bouton">Carte</div></a>
+   </div>
+ <div class="topnav-right">
+ <a class="open-button bouton" id="id" onclick="openForm()">S'identifier</a>
+ </div>
+  </nav>
+<div action="" class="form-container" id="myForm" style="display : none">
+<div class="container">
+  <h2 class="se_connecter">Accédez à votre compte personnel</h2>
+  <form>
+  <label class="se_connecter" for="email"><b>Email</b></label>
+  <input class="se_connecter" type="text" placeholder="Votre adresse mail" name="email" id="email" required>
+
+  <label class="se_connecter" for="psw"><b>Mot de passe</b></label>
+  <input class="se_connecter" type="password" placeholder="votre mot de passe" name="psw" id="psw" required>
+  <button class="se_connecter registerbtn" onclick="login()" >Se connecter</button>
+    <button class="se_déconnecter registerbtn" onclick="disconect()" id="se_déconnecter">Se déconecter</button>
+</form>
+
+  <div class="container signin">
+    Vous êtes nouveau? <a href="../html/formulaire.html">S'inscrire</a>
+  </div>
+</div>
+</div>
+
+</body>
+<script src='../js/reservation.js'></script>
+</html>

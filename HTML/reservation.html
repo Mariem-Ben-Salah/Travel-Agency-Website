@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link rel="stylesheet" href="../css/acceuil1.css">
+    <title>Réservation</title>
+</head>
+<body onload="start()">
+<nav class="nav-bar">
+    <div class="topnav">
+     <a href="../html/acceuil1.html"> <div class="bouton">Accueil</div></a>
+     <a href="../html/covid19.html"> <div class="bouton">Covid-19</div></a>
+     <a href="../html/destinations.html"><div class="bouton">Nos destinations</div></a>
+     <a href="../html/panier.html"><div class="bouton">Panier</div></a>
+     <a href="../html/Carte_du_monde.html"><div class="bouton">Carte</div></a>
+    </div>
+<div class="topnav-right">
+    <a class="open-button bouton" id="id" onclick="openForm()">S'identifier</a>
+</div>
+  </nav>
+
+<div action="" class="form-container" id="myForm" style="display : none">
+    <div class="container">
+        <h2 class="se_connecter">Accédez à votre compte personnel</h2>
+        <form>
+            <label class="se_connecter" for="email"><b>Email</b></label>
+            <input class="se_connecter" type="text" placeholder="Votre adresse mail" name="email" id="email" required>
+
+            <label class="se_connecter" for="psw"><b>Mot de passe</b></label>
+            <input class="se_connecter" type="password" placeholder="votre mot de passe" name="psw" id="psw" required>
+
+            <button class="se_connecter registerbtn" onclick="login()" >Se connecter</button>
+            <button class="se_déconnecter registerbtn" onclick="disconect()" id="se_déconnecter">Se déconecter</button>
+        </form>
+
+        <div class="container signin">
+            Vous êtes nouveau? <a href="../html/formulaire.html">S'inscrire</a>
+        </div>
+    </div>
+</div>
+  
+  <form id="reserv" action="recap.html" onKeyPress="if(event.keyCode == 13) sub()" onload="Calculprix()">
+  <table>
+      <tr> <td> Date de départ:</td>
+          <td><input type="date" id="depart" name="depart" onchange="Calculprix()" required></td>
+      </tr>
+      <tr> <td> Date de retour: </td>
+          <td><input id="retour" type="date" name="retour" onchange="Calculprix()" required></td>
+      </tr>
+      <tr> <td> Nombre d'adultes : </td>
+          <td ><input type="number"  name="nbradu" value="2" min="1" onchange="Calculprix()" required></td>
+      </tr>
+      <tr> <td> Nombre d'enfants (-12ans):</td>
+          <td ><input  type="number" name="nbrenf" value="0" min="0" onchange="Calculprix()" required></td>
+      </tr>
+      <tr> <td> Petit déjeuner inclus: </td>
+          <td ><input  type="checkbox" name="petitdej" id="checkbox1"  onchange="Calculprix()" ></td>
+      </tr>
+      <tr> <td class="invisible"> sejourid: </td>
+        <td ><input id="sejourid" type="number" name="sejourid" value="55" style="display:none" required></td>
+    </tr>
+    <tr> <td class="invisible"> nbrJ </td>
+        <td ><input id="nbrJ" type="number" name="nbrJ" value="1" style="display:none" required></td>
+    </tr>
+    <tr> <td class="invisible"> prixtot </td>
+        <td ><input id="prixtot" type="number" name="prixtot" value="1" style="display:none" required></td>
+    </tr>
+
+      </table>
+
+  </form>
+  <div class="table1">
+
+      <input id="prix" type="text" name="prix" value="" disabled><br>
+      <input type="button" name="Confirmer" value="Confirmer" onclick="sub()">
+      <input type="button" name="reset" value="Réinitialiser" onclick=location.reload();>
+      <input id="ville" type="text" name="ville" value="" >
+      <input id="nbrJ" type="text" name="nbrJ" value="" >
+      <input id="prixtot" type="text" name="prixtot" value="" ><br>
+      <label>Besoin de renseignements sur ce voyage ?</label> <br>
+      <textarea id="subject" placeholder="Bonjour, je souhaiterais savoir s'il y a un minigolf à proximité de l'hotel..."></textarea><br>
+      <input type="button" value="Envoyer" onclick="Verifsend()">
+  </div>
+  
+  
+</body>
+<script src='../js/reservation.js'></script>
+<script src="../js/accueil.js"></script>
+</html>

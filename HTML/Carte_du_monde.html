@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <title >CpeAirline </title>
+</head>
+<body onload="remplissage()">
+  <img src="../img/logo.png" id="logo">
+
+    <nav class="nav-bar">
+      <div class="topnav">
+       <a href="#home"> <div class="bouton">Accueil</div></a>
+       <a href="../html/covid19.html"> <div class="bouton">Covid-19</div></a>
+       <a href="../html/destinations.html"><div class="bouton">Nos destinations</div></a>
+       <a href="../html/panier.html"><div class="bouton">Panier</div></a>
+       <a href="../html/Carte_du_monde.html"><div class="bouton">Carte du monde</div></a>
+     </div>
+   <div class="topnav-right">
+   <a class="open-button bouton" id="id" onclick="openForm()">S'identifier</a>
+   <input type="text" name="searchBar" id="searchBar">
+
+   </div>
+    </nav>
+<div action="" class="form-container" id="myForm" style="display : none">
+  <div class="container">
+    <h2 class="se_connecter">Accédez à votre compte personnel</h2>
+    <form>
+    <label class="se_connecter" for="email"><b>Email</b></label>
+    <input class="se_connecter" type="text" placeholder="Votre adresse mail" name="email" id="email" required>
+
+    <label class="se_connecter" for="psw"><b>Mot de passe</b></label>
+    <input class="se_connecter" type="password" placeholder="votre mot de passe" name="psw" id="psw" required>
+
+    <button class="se_connecter registerbtn" onclick="login()" >Se connecter</button>
+      <button class="se_déconnecter registerbtn" onclick="disconect()" id="se_déconnecter">Se déconecter</button>
+  </form>
+
+    <div class="container signin">
+      Vous êtes nouveau? <a href="../html/formulaire.html">S'inscrire</a>
+    </div>
+  </div>
+</div>
+
+<form action="" class="form-container" id="myForm" style="display : none">
+  <div class="container" onmouseleave="openForm()">
+    <h2>Accédez à votre compte personnel</h2>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Votre adresse mail" name="email" id="email" required>
+
+    <label for="psw"><b>Mot de passe</b></label>
+    <input type="password" placeholder="votre mot de passe" name="psw" id="psw" required>
+
+    <button type="submit" class="registerbtn">Se connecter</button>
+
+
+    <div class="container signin">
+      <p>Vous êtes nouveau? <a href="#">S'inscrire</a>.</p>
+    </div>
+  </div>
+</form>
+
+<div class="Coeur2" id="Map">
+    <object type="image/svg+xml" data="../html/World_map_blank_without_borders.svg"></object>
+    <svg id="Locations">
+
+    </svg>
+  </div>
+</div>
+</body>
+
+<footer>
+  <div class="row">
+    <div class="column " >
+      <h2 id="h2">A propos de notre agence</h2>
+      <p>CpeAirline est une agence de voyage créée récemment
+        par des jeunes étudiants à l'école Cpe </b>
+        Depuis sa création , l'agence a connu un succées énorme grâce au sérieux
+        de ses créateurs
+      </p>
+
+    </div>
+    <div class="column " >
+      <h2 id="h2">Contactez Nous</h2>
+      <p><i class="fa fa-phone"></i> Téléphone: +0753588044 </p>
+      <p><i class="fa fa-phone"></i> fixe: +0456325657 </p>
+    </div>
+    <div class="column " >
+      <h2 id="h2">Envoyez nous un email</h2>
+      <i class='fas fa-at'></i> <a href="mailto:matpettex@gmail.com?Subject=Demande de renseignements&amp;body=Bonjour, je voudrais demander des renseignements sur">matpettex@gmail.com</a><br>
+      <i class='fas fa-at' ></i> <a href="mailto:mariembensalah7@gmail.com?Subject=Demande de renseignements&amp;body=Bonjour, je voudrais demander des renseignements sur">mariembensalah7@gmail.com</a>
+    </div>
+    <div class="column " >
+      <h2 id="h2">Adresse</h2>
+      <p>Campus Lyontech, 3 Rue Victor Grignard
+        69100 Villeurbanne</p>
+    </div>
+  </div>
+</footer>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+<script src="../js/accueil.js"></script>
+</html>
