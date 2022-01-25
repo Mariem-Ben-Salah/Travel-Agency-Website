@@ -9,9 +9,7 @@
     An awesome, modern React portfolio
     <br />
     <br />
-  
     <a href="https://github.com/Mariem-Ben-Salah/agence/issues">Report Bug</a>
-    
     <a href="https://github.com/Mariem-Ben-Salah/agence/issues">Request Feature</a>
   </p>
 </p>
