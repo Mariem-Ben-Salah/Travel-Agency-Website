@@ -35,6 +35,7 @@ This project is about a travel agency website where you can book destinations, f
 * HTML
 * CSS
 * JavaScript
+* Canvas
 
 <!-- GETTING STARTED -->
 ## Getting Started
