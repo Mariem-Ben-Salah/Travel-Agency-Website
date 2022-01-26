@@ -3,10 +3,11 @@
 <br />
 <p align="center">
 
-  <h1 align="center">Agency website</h3>
+  <h1 align="center">Travel Agency website</h3>
+  <img src="https://i.ibb.co/ZzC4Xkw/Sans-titre.png">
 
   <p align="center">
-    An awesome, modern React portfolio
+    An awesome, travel agency website
     <br />
     <br />
     <a href="https://github.com/Mariem-Ben-Salah/agence/issues">Report Bug</a>
@@ -17,23 +18,23 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-blabla
+This project is about a travel agency website where you can book destinations, filter searches and check the prices/weather.
 
-### Forking this project
-blabalalla
 
 ### Screenshots
 
 <p align="center">
-  <p align="center">balbla</p>
-  <img src="screenshots/light.png" alt="Home section">
+  <p align="center">Interactive Map</p>
+  <img src="https://i.ibb.co/2yMK1fS/Sans-titre.png">
+  
+  
 </p>
 
 ### Built With
 
-* [React JS](https://reactjs.org/)
-* [Material UI](https://material-ui.com/)
-* [Framer Motion](https://www.framer.com/motion/)
+* HTML
+* CSS
+* JavaScript
 
 <!-- GETTING STARTED -->
 ## Getting Started
