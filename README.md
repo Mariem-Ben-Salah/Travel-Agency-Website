@@ -3,8 +3,9 @@
 <br />
 <p align="center">
 
-  <h1 align="center">Travel Agency website</h3>
+  <h1 align="center">Travel Agency website </h3>
   <img src="https://i.ibb.co/ZzC4Xkw/Sans-titre.png">
+  
 
   <p align="center">
     An awesome, travel agency website
@@ -26,7 +27,6 @@ This project is about a travel agency website where you can book destinations, f
 <p align="center">
   <p align="center">Interactive Map</p>
   <img src="https://i.ibb.co/2yMK1fS/Sans-titre.png">
-  
   
 </p>
 
