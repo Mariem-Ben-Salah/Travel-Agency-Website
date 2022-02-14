@@ -4,7 +4,9 @@
 <p align="center">
 
   <h1 align="center">Travel Agency website </h3>
-  <img src="https://i.ibb.co/ZzC4Xkw/Sans-titre.png">
+  <p align="center">
+  <img src="https://i.ibb.co/ZzC4Xkw/Sans-titre.png"/>
+  </p>
   
 
   <p align="center">
